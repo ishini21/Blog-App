@@ -22,8 +22,9 @@ function BlogItem({ title, description, category, image, id }) {
         <h5 className="mb-2 text-lg font-medium tracking-tight text-gray-900">
           {title}
         </h5>
-        <p className="mb-3 text-sm tracking-tight text-gray-700">
-          {description}
+        <p className="mb-3 text-sm tracking-tight text-gray-700"
+        dangerouslySetInnerHTML={{__html:data.description.slice(0,120)}}>
+          
         </p>
 
         <Link
