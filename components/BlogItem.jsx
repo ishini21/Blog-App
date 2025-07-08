@@ -1,4 +1,4 @@
-import { assets, blog_data } from "@/assets/assets";
+import { assets } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +9,7 @@ function BlogItem({ title, description, category, image, id }) {
       <Link href={`/blogs/${id}`}>
         <Image
           src={image}
-          alt=""
+          alt={title || "Blog post image"}
           width={400}
           height={400}
           className="border border-black"
@@ -22,17 +22,23 @@ function BlogItem({ title, description, category, image, id }) {
         <h5 className="mb-2 text-lg font-medium tracking-tight text-gray-900">
           {title}
         </h5>
-        <p className="mb-3 text-sm tracking-tight text-gray-700"
-        dangerouslySetInnerHTML={{__html:data.description.slice(0,120)}}>
-          
-        </p>
-
+        <p 
+          className="mb-3 text-sm tracking-tight text-gray-700"
+          dangerouslySetInnerHTML={{
+            __html: description?.slice(0, 120) + (description?.length > 120 ? "..." : "") || "No description available"
+          }}
+        />
         <Link
           href={`/blogs/${id}`}
           className="inline-flex items-center py-2 font-semibold text-center"
         >
           Read more{" "}
-          <Image src={assets.arrow} width={12} alt="" className="ml-2" />
+          <Image 
+            src={assets.arrow} 
+            width={12} 
+            alt="Read more arrow" 
+            className="ml-2" 
+          />
         </Link>
       </div>
     </div>
