@@ -4,13 +4,20 @@ import { assets } from "../../assets/assets";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function Sidebar() {
+  const router = useRouter();
   const pathname = usePathname();
 
   // Helper function to determine if a link is active
   const isActive = (path) => {
     return pathname === path;
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("user"); // Clear user data
+    router.push("/login"); // Redirect to login
   };
 
   return (
@@ -20,18 +27,37 @@ function Sidebar() {
       </div>
       <div className="w-28 sm:w-80 h-[100vh] relative py-12 border border-black">
         <div className="w-[50%] sm:w-[80%] absolute right-0">
-          <Link href='/admin/addProduct' className="flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]">
+          <Link
+            href="/admin/addProduct"
+            className="flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]"
+          >
             <Image src={assets.add_icon} alt="" width={28} />
             <p>Add blogs</p>
           </Link>
-          <Link href='/admin/blogList' className="mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]">
+          <Link
+            href="/admin/blogList"
+            className="mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]"
+          >
             <Image src={assets.blog_icon} alt="" width={28} />
             <p>Blog list</p>
           </Link>
-          <Link href='/admin/subscriptions' className="mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]">
+          <Link
+            href="/admin/subscriptions"
+            className="mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]"
+          >
             <Image src={assets.email_icon} alt="" width={28} />
             <p>Subscriptions</p>
           </Link>
+
+          {/*Only show if logged in */}
+          {typeof window !== "undefined" && localStorage.getItem("user") && (
+            <button
+              onClick={handleLogout}
+              className="bg-red-400 hover:bg-red-500 px-4 py-2 rounded mt-10 w-full text-white"
+            >
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </div>
