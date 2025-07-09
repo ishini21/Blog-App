@@ -47,7 +47,7 @@ function Header() {
         {typeof window !== 'undefined' && localStorage.getItem('user') && (
           <button
             onClick={handleLogout}
-            className="bg-red-500 hover:bg-red-600 py-1 px-5 rounded text-white"
+            className="bg-red-400 hover:bg-red-500 py-0.5 px-6 rounded text-white"
           >
             Logout
           </button>
