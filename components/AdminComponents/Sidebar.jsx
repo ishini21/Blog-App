@@ -53,7 +53,7 @@ function Sidebar() {
           {typeof window !== "undefined" && localStorage.getItem("user") && (
             <button
               onClick={handleLogout}
-              className="bg-red-400 hover:bg-red-500 px-4 py-2 rounded mt-10 w-full text-white"
+              className="bg-red-400 hover:bg-red-500 px-4 py-2 rounded mt-60 w-full text-white"
             >
               Logout
             </button>
