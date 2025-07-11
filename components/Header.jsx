@@ -54,7 +54,7 @@ function Header() {
         )}
      </div>
       </div>
-      <div className="text-center my-8">
+      <div className="text-center my-8 bg-gradient-to-br from-green-100 to-blue-300">
         <h1 className="text-3xl sm:text-5xl font-medium text-blue-900">
           Latest Blogs
         </h1>
