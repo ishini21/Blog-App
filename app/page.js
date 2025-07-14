@@ -57,7 +57,7 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="h-screen flex items-center justify-center bg-gradient-to-br from-green-200 to-blue-400 text-2xl text-[#0891b2] font-bold">
+      <div className="h-screen flex items-center justify-center bg-gradient-to-br from-green-200 to-blue-400 text-3xl text-[#0891b2] font-bold">
         Loading...
       </div>
     );
