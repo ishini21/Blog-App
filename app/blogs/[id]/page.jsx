@@ -140,13 +140,13 @@ function Page({ params }) {
             />
           </Link>
 
-          <button className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-black shadow-[-7px_7px_0px_#0a28d1] bg-blue-100">
+          <button className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-black shadow-[-7px_7px_0px_#0891b2] bg-white">
             Get started
             <Image src={assets.arrow} alt="Arrow icon" width={20} height={20} />
           </button>
         </div>
         <div className="text-center my-24">
-          <h1 className="text-2xl sm:text-5xl font-semibold max-w-[700px] text-blue-900 mx-auto">
+          <h1 className="text-2xl sm:text-5xl font-semibold max-w-[700px] text-[#0891b2] mx-auto">
             {data.title}
           </h1>
           <Image
