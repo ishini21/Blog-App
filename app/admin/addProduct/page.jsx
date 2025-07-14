@@ -50,7 +50,7 @@ function page() {
   return (
     <>
       <form onSubmit={onSubmitHandler} className="pt-5 px-5 sm:pt-12 sm:pl-16">
-        <p className="text-xl">Upload thummbmail</p>
+        <p className="text-xl text-[#0891b2] font-bold">Upload thummbmail</p>
         <label htmlFor="image">
           <Image
             src={!image ? assets.upload_area : URL.createObjectURL(image)}
@@ -100,7 +100,7 @@ function page() {
           <option value="Lifestyle">Lifestyle</option>
         </select>
         <br />
-        <button type="submit" className="mt-8 w-40 h-12 bg-black text-white">
+        <button type="submit" className="mt-8 w-40 h-12 bg-[#0891b2] text-white">
           ADD
         </button>
       </form>

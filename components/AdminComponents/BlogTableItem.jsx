@@ -16,7 +16,7 @@ function BlogTableItem({authorImg,title,author,deleteBlog,mongoId,date}) {
     <td className='px-6 py-4 '>
         {BlogDate.toDateString()}
     </td>
-      <td onClick={()=>deleteBlog(mongoId)} className='px-6 py-4 cursor-pointer'>
+      <td onClick={()=>deleteBlog(mongoId)} className='px-6 py-4 text-red-500 hover:text-red-700 cursor-pointer'>
        x
     </td>
 
