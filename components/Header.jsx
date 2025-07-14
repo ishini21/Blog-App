@@ -29,7 +29,7 @@ function Header() {
   };
 
   return (
-    <div className="py-5 px-5 md:px-12 lg:px-28">
+    <div className="py-5 px-5 md:px-12 lg:px-28 bg-gradient-to-br from-green-100 to-blue-300">
       <div className="flex justify-between items-center">
         <Image
           src={assets.logo}
@@ -38,24 +38,25 @@ function Header() {
           className="w-[130px] sm:w-auto"
         />
         <div className="flex gap-4">
-        <button className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#0a28d1] bg-blue-100 ">
-          Get started
-          <Image src={assets.arrow} alt="" />
-        </button>
-                
-        {/* Optional: Only show if logged in */}
-        {typeof window !== 'undefined' && localStorage.getItem('user') && (
-          <button
-            onClick={handleLogout}
-            className="bg-red-400 hover:bg-red-500 py-0.5 px-6 rounded text-white"
-          >
-            Logout
+          <button className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#0891b2] bg-white ">
+            Get started
+            <Image src={assets.arrow} alt="" />
           </button>
-        )}
-     </div>
+
+          {/* Optional: Only show if logged in */}
+          {typeof window !== "undefined" && localStorage.getItem("user") && (
+            <button
+              onClick={handleLogout}
+              className="bg-red-400 hover:bg-red-500 py-0.5 px-6 rounded text-white"
+            >
+              Logout
+            </button>
+          )}
+        </div>
       </div>
-      <div className="text-center my-8 bg-gradient-to-br from-green-100 to-blue-300">
-        <h1 className="text-3xl sm:text-5xl font-medium text-blue-900">
+
+      <div className="text-center my-8 bg-white p-8  rounded-lg border border-none">
+        <h1 className="text-3xl sm:text-5xl font-medium text-[#0891b2]">
           Latest Blogs
         </h1>
         <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base">
@@ -66,7 +67,7 @@ function Header() {
         </p>
         <form
           onSubmit={onSubmitHandler}
-          className="flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#0a28d1]"
+          className="flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#0891b2]"
         >
           <input
             onChange={(e) => setEmail(e.target.value)}
@@ -78,7 +79,7 @@ function Header() {
 
           <button
             type="submit"
-            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white "
+            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white"
           >
             Subscribe
           </button>
