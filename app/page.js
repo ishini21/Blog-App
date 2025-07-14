@@ -65,9 +65,11 @@ export default function Home() {
 
   return (
     <>
+      <div className='bg-gradient-to-br from-green-100 to-blue-300'>
       <Header />
       <BlogList />
       <Footer />
+      </div>
     </>
   );
 }

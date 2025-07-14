@@ -5,7 +5,7 @@ import React from "react";
 
 function BlogItem({ title, description, category, image, id }) {
   return (
-    <div className="max-w-[330px] sm:max-w-[300px] bg-white border border-black hover:shadow-[-7px_7px_0px_#0a28d1]">
+    <div className="max-w-[330px] sm:max-w-[300px] bg-white border border-black hover:shadow-[-7px_7px_0px_#0891b2]">
       <Link href={`/blogs/${id}`}>
         <Image
           src={image}
@@ -15,7 +15,7 @@ function BlogItem({ title, description, category, image, id }) {
           className="border border-black"
         />
       </Link>
-      <p className="ml-5 mt-5 px-1 inline-block bg-blue-900 text-white text-sm">
+      <p className="ml-5 mt-5 px-1 inline-block bg-[#0891b2] text-white text-sm">
         {category}
       </p>
       <div className="p-5">

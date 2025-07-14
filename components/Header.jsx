@@ -29,7 +29,7 @@ function Header() {
   };
 
   return (
-    <div className="py-5 px-5 md:px-12 lg:px-28 bg-gradient-to-br from-green-100 to-blue-300">
+    <div className="py-5 px-5 md:px-12 lg:px-28">
       <div className="flex justify-between items-center">
         <Image
           src={assets.logo}
@@ -55,7 +55,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="text-center my-8 bg-white p-8  rounded-lg border border-none">
+      <div className="text-center my-8 bg-white p-10  rounded-lg border border-none">
         <h1 className="text-3xl sm:text-5xl font-medium text-[#0891b2]">
           Latest Blogs
         </h1>
