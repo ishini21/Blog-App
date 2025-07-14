@@ -128,7 +128,7 @@ function Page({ params }) {
   return (
     <>
     
-      <div className="bg-gradient-to-br from-green-100 to-blue-300 py-5 px-5 md:px-12 lg:px-28">
+      <div className="bg-gradient-to-br from-green-200 to-blue-400 py-5 px-5 md:px-12 lg:px-28">
         <div className="flex justify-between items-center">
           <Link href='/'>
             <Image

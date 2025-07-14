@@ -72,7 +72,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-blue-300">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-200 to-blue-400">
     <div className="w-[400px] md:max-w-md mx-auto p-6 bg-transparent text-center shadow-sm rounded-lg">
         <h2 className="text-3xl text-[#0891b2] font-bold mb-4 text-center">Login</h2>
         

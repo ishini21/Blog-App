@@ -21,7 +21,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="flex flex-col bg-gradient-to-br from-green-100 to-blue-300">
+    <div className="flex flex-col bg-gradient-to-br from-green-200 to-blue-400">
       <div className="px-2 sm:pl-14 py-3 border border-black">
         <Image src={assets.logo} width={120} alt="" />
       </div>

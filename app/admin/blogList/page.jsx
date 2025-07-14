@@ -33,7 +33,7 @@ function page() {
       <h1 className="text-xl text-[#0891b2] font-bold">All blogs</h1>
       <div className="relative h-[80vh] max-w-[850px] overflow-x-auto mt-4 border border-gray-400 scrollbar-hide">
         <table className="w-full text-sm text-gray-500">
-          <thead className="text-sm text-gray-700 text-left uppercase bg-gray-50">
+          <thead className="text-sm text-gray-700 text-left uppercase bg-gray-100">
             <tr>
               <th scope="" className="hidden sm:block px-6 py-3 text-[#0891b2]">
                 Author name
