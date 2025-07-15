@@ -59,7 +59,7 @@ function Header() {
         <h1 className="text-3xl sm:text-5xl font-medium text-[#0891b2]">
           Latest Blogs
         </h1>
-        <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base text-black">
+        <p className="mt-10 max-w-[740px] m-auto text-lg sm:text-xl text-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem dolor unde nobis fugit dignissimos blanditiis veritatis
           commodi! Cum voluptatum quod esse error similique aut. Doloribus optio
