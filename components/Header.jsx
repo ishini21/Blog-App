@@ -55,11 +55,11 @@ function Header() {
         </div>
       </div>
 
-      <div className="text-center my-8 bg-[#0891b2] p-10  rounded-lg border border-none">
-        <h1 className="text-3xl sm:text-5xl font-medium text-white">
+      <div className="text-center my-8 bg-white p-10  border border-none rounded-lg shadow-md">
+        <h1 className="text-3xl sm:text-5xl font-medium text-[#0891b2]">
           Latest Blogs
         </h1>
-        <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base text-white">
+        <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base text-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem dolor unde nobis fugit dignissimos blanditiis veritatis
           commodi! Cum voluptatum quod esse error similique aut. Doloribus optio
@@ -74,12 +74,12 @@ function Header() {
             value={email}
             type="email"
             placeholder="Enter your email"
-            className="pl-4 outline-none text-white"
+            className="pl-4 outline-none text-gray-500"
           />
 
           <button
             type="submit"
-            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white text-white"
+            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white text-black"
           >
             Subscribe
           </button>
