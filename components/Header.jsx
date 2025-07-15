@@ -79,7 +79,7 @@ function Header() {
 
           <button
             type="submit"
-            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white text-black"
+            className="w-full sm:w-auto border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white text-black"
           >
             Subscribe
           </button>
